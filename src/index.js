@@ -24,6 +24,8 @@ import { App } from './container/App/App'
 // // const root = ReactDOM.createRoot(document.getElementById("root"));
 // // root.render(h1);
 
+//______create a component:______you have to envelope elements with <div> to create many elements 1 component//
+
 // function App() {
 // return (<div>
 //   <h1>Hello App.js</h1>;
@@ -41,7 +43,7 @@ import { App } from './container/App/App'
 //  root.render(<App />);
 
 //  function App() {
-//   return (<React.Fragment>
+//   return (<React.Fragment>  // :to create many elements : instead of <div> put <React. ...>
 //     <h1>Hello App.js</h1>
 //     <ul>
 //       <li>list1
@@ -58,7 +60,7 @@ import { App } from './container/App/App'
 //    root.render(<App />);
 
 // //  function App() {
-// //   return (<>
+// //   return (<>        // :to create many elements : instead of <div> or <React. ...> put <> !!!!!//
 // //     <h1>Hello App.js</h1>
 // //     <ul>
 // //       <li>list1
@@ -87,7 +89,7 @@ import { App } from './container/App/App'
 // //          </ul>
 // //          </>)
 // //          ;
-// //     }-
+// //     }
 // //     const root = ReactDOM.createRoot(document.getElementById("root"));
 // //      root.render(<App />);
 
