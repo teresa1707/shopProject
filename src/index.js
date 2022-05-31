@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { App } from './container/App/App'
 //import App from './container/App/App' //default export /look App.js//
 
-import { Header } from '/.container/Header/Header'
+//__create components :
 
 // // const h1 = <h1>Hello world</h1>
 // // const el = (<div>
