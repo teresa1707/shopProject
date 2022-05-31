@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { App } from './container/App/App'
+//import App from './container/App/App' //default export /look App.js//
+
+import { Header } from '/.container/Header/Header'
 
 // // const h1 = <h1>Hello world</h1>
 // // const el = (<div>
@@ -77,35 +81,35 @@ import ReactDOM from 'react-dom/client'
 //         <li>list1
 //           </li>
 //            <li>list2
-//            </li>
-//            <li>list3
-//            </li>
-//          </ul>
-//          </>)
-//          ;
-//     }-
-//     const root = ReactDOM.createRoot(document.getElementById("root"));
-//      root.render(<App />);
+// //            </li>
+// //            <li>list3
+// //            </li>
+// //          </ul>
+// //          </>)
+// //          ;
+// //     }-
+// //     const root = ReactDOM.createRoot(document.getElementById("root"));
+// //      root.render(<App />);
 
-const Header = () => <h1>Hello App.js</h1>
-function AppList() {
-    return (
-        <ul>
-            <li>list1</li>
-            <li>list2</li>
-            <li>list3</li>
-        </ul>
-    )
-}
+// const Header = () => <h1>Hello App.js</h1>
+// function AppList() {
+//     return (
+//         <ul>
+//             <li>list1</li>
+//             <li>list2</li>
+//             <li>list3</li>
+//         </ul>
+//     )
+// }
 
-function App() {
-    return (
-        <>
-            <Header />
-            <AppList />
-        </>
-    )
-}
+// function App() {
+//     return (
+//         <>
+//             <Header />
+//             <AppList />
+//         </>
+//     )
+// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />)
