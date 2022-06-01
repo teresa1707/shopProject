@@ -1,11 +1,11 @@
 import React from 'react'
-//import './CartHeader.css'
-import styles from './CartHeader.module.css'
+
+import './CartHeader.scss'
 
 export const CartHeader = () => {
+    const isLoaded = true
     return (
-        //<div className="cartHeader">
-        <div className={styles.cartHeader}>
+        <div className={isLoaded ? 'green' : 'red'}>
             <div>0</div>
             <div>0$</div>
         </div>
