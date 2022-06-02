@@ -24,13 +24,31 @@ export const ProductsList = () => {
                 gridItems="center"
             >
                 <Grid item xs={12} sm={6} md={4}>
-                    <ProductsListItems />
+                    <ProductsListItems
+                        name="Iphone 11xs"
+                        description="This is a Iphone 11xs"
+                        type="phone"
+                        capacity="64"
+                        price="500"
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
-                    <ProductsListItems />
+                    <ProductsListItems
+                        name="Iphone 13pro"
+                        description="This is a Iphone 11xs"
+                        type="phone"
+                        capacity="126"
+                        price="100"
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
-                    <ProductsListItems />
+                    <ProductsListItems
+                        name="Iphone 11xs"
+                        description="This is a Iphone 11xs"
+                        type="phone"
+                        capacity="64"
+                        price="500"
+                    />
                 </Grid>
             </Grid>
         </>

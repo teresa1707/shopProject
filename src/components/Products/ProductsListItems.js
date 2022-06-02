@@ -2,17 +2,17 @@ import React from 'react'
 import { Card, CardActions, CardContent, Button } from '@mui/material'
 import './ProductsListItems.scss'
 
-export const ProductsListItems = () => {
+export const ProductsListItems = (props) => {
     return (
         <Card>
             <CardContent>
-                <h4>IPhone XS</h4>
-                <p>This is phone</p>
-                <div>Type : phone</div>
-                <div>Capacity : 64Gb</div>
-                <div>500 $</div>
+                <h4>{props.name}</h4>
+                <p>{props.description}</p>
+                <div>Type : {props.type}</div>
+                <div>Capacity : {props.capacity}Gb</div>
+                <div>{props.price} $</div>
             </CardContent>
-            <CardActions class="add-to-cart-block">
+            <CardActions className="add-to-cart-block">
                 <Button variant="contained">Add to cart</Button>
             </CardActions>
         </Card>
