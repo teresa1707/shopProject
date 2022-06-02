@@ -1,12 +1,4 @@
-cartHeader {
-  margin: 30px;
-}
-
-cartHeader .red {
-  color: red;
-}
-
-cartHeader .green {
-  color: green;
+.cartHeader {
+  margin: 10px;
 }
 /*# sourceMappingURL=CartHeader.css.map */
