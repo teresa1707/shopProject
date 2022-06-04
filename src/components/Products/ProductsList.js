@@ -19,7 +19,7 @@ export const ProductsList = () => {
             >
                 Products List
             </Typography>
-            {/* <img src={image} alt="" /> */}
+
             <Grid
                 container
                 spacing={3}
@@ -27,18 +27,19 @@ export const ProductsList = () => {
                 justifyContent="center"
                 alignItems="center"
             >
-                {productsArray.map((product, i) => (
-                    <Grid item xs={12} sm={6} md={4} key={i}>
-                        <ProductsListItems
-                            // image={productimage}
-                            name={product.name}
-                            description={product.description}
-                            type={product.type}
-                            capacity={product.capacity}
-                            price={product.price}
-                        />
-                    </Grid>
-                ))}
+                {productsArray.map(
+                    ({ id, name, description, type, capacity, price }) => (
+                        <Grid item xs={12} sm={6} md={4} key={id}>
+                            <ProductsListItems
+                                name={name}
+                                description={description}
+                                type={type}
+                                capacity={capacity}
+                                price={price}
+                            />
+                        </Grid>
+                    )
+                )}
             </Grid>
         </>
     )
