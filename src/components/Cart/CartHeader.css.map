@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,IAAI;CACf",
-    "sources": [
-        "CartHeader.scss"
-    ],
-    "names": [],
-    "file": "CartHeader.css"
-}

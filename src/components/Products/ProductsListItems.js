@@ -13,13 +13,19 @@ export const ProductsListItems = ({
     return (
         <Card>
             <CardContent>
-                <div className="product-img">
+                <div className="product-image">
                     <img src={image} alt="" />
                 </div>
                 <h2>{name}</h2>
                 <p>{description}</p>
-                <div>Type : {type}</div>
-                <div>Capacity : {capacity}Gb</div>
+                <div className="product-features">
+                    <span>Type : </span>
+                    {type}
+                </div>
+                <div className="product-features">
+                    <span>Capacity : </span>
+                    {capacity}Gb
+                </div>
                 <div className="product-price">{price} $</div>
             </CardContent>
             <CardActions className="add-to-cart-block">
