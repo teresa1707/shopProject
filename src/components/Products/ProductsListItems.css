@@ -1,0 +1,34 @@
+.add-to-cart-block {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-size: 25px;
+  text-align: center;
+}
+
+.product-features {
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+.product-features span {
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 19px;
+}
+
+.product-image {
+  text-align: center;
+}
+
+.product-image img {
+  width: 100px;
+  height: 150px;
+}
+/*# sourceMappingURL=ProductsListItems.css.map */

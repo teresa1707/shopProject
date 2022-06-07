@@ -11,7 +11,7 @@ import { CartHeader } from 'components/Cart/CartHeader'
 export const Header = () => {
     return (
         <>
-            <AppBar position="static">
+            <AppBar position="static" style={{ background: '#2E3B55' }}>
                 <Container>
                     <Toolbar>
                         <IconButton
