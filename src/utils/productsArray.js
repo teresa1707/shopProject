@@ -5,11 +5,11 @@ const products = [
         type: 'phone',
         capacity: 126,
         price: 1000,
-        // image: 'images/phone1.jpg',
+        image: 'images/phone1.jpg',
     },
     {
         name: 'Iphone 11xs',
-        // description: 'This is a Iphone 11xs',
+        description: 'This is a Iphone 11xs',
         type: 'phone',
         capacity: 126,
         price: 1000,
@@ -45,7 +45,7 @@ const products = [
         type: 'phone',
         capacity: 126,
         price: 1000,
-        // image: 'images/phone6.jpg',
+        image: 'images/phone6.jpg',
     },
 ]
 
