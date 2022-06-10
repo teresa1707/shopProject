@@ -18,9 +18,14 @@ export const ProductsListItems = ({
     price,
 }) => {
     const [count, setCount] = useState(1)
+    const [color, setColor] = useState('green')
 
     const onIncrementClick = () => setCount(count + 1)
     const onDecrementClick = () => setCount(count - 1)
+
+    const changeColor = () => {
+        setColor((prevState) => (prevState === 'green' ? 'red' : 'green'))
+    }
 
     return (
         <Card>
@@ -30,6 +35,12 @@ export const ProductsListItems = ({
                 </div>
                 <h2>{name}</h2>
                 <p>{description}</p>
+                <p>
+                    Color :<span className={color}>{color}</span>{' '}
+                </p>
+                <Button variant="outlined" onClick={changeColor}>
+                    change color
+                </Button>
                 <div className="product-features">
                     <span>Type : </span>
                     {type}
@@ -69,14 +80,14 @@ export const ProductsListItems = ({
     )
 }
 
-ProductsListItems.propTypes = {
-    image: PropTypes.string,
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string,
-    type: PropTypes.string.isRequired,
-    capacity: PropTypes.number.isRequired,
-    price: PropTypes.number,
-}
+// ProductsListItems.propTypes = {
+//     image: PropTypes.string,
+//     name: PropTypes.string.isRequired,
+//     description: PropTypes.string,
+//     type: PropTypes.string.isRequired,
+//     capacity: PropTypes.number.isRequired,
+//     price: PropTypes.number,
+// }
 
 // ProductsListItems.defaultProps = {
 //     description: 'No desc...',
