@@ -10,6 +10,7 @@ import './ProductsListItems.scss'
 import PropTypes from 'prop-types'
 
 export const ProductsListItems = ({
+    cartData,
     image = 'images/no-image.jpg',
     name,
     description = 'No desc...',
@@ -68,6 +69,7 @@ export const ProductsListItems = ({
                     </Button>
                 </div>
             </CardContent>
+
             <CardActions className="add-to-cart-block">
                 <Button
                     variant="contained
