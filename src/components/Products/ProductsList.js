@@ -4,7 +4,7 @@ import { ProductsListItems } from './ProductsListItems'
 import { Grid } from '@mui/material'
 import productsArray from 'utils/productsArray'
 
-export const ProductsList = ({ cartData }) => {
+export const ProductsList = ({ cartData, totalCartItems, count1 }) => {
     return (
         <>
             <Typography
@@ -44,6 +44,8 @@ export const ProductsList = ({ cartData }) => {
                                 price={price}
                                 image={image}
                                 cartData={cartData}
+                                totalCartItems={totalCartItems}
+                                count1={count1}
                             />
                         </Grid>
                     )

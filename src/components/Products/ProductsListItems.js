@@ -7,9 +7,11 @@ import {
     TextField,
 } from '@mui/material'
 import './ProductsListItems.scss'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 export const ProductsListItems = ({
+    count1,
+    totalCartItems,
     cartData,
     image = 'images/no-image.jpg',
     name,
@@ -27,7 +29,10 @@ export const ProductsListItems = ({
     const changeColor = () => {
         setColor((prevState) => (prevState === 'green' ? 'red' : 'green'))
     }
+    count1 = count
 
+    cartData = cartData
+    console.log()
     return (
         <Card>
             <CardContent>
@@ -35,6 +40,7 @@ export const ProductsListItems = ({
                     <img src={image} alt="" />
                 </div>
                 <h2>{name}</h2>
+
                 <p>{description}</p>
                 <p>
                     Color :<span className={color}>{color}</span>{' '}
@@ -60,7 +66,9 @@ export const ProductsListItems = ({
                         -
                     </Button>
                     <TextField size="small" value={count} />
+
                     <Button
+                        id="button"
                         variant="contained"
                         onClick={onIncrementClick}
                         disabled={count >= 10}
@@ -71,10 +79,7 @@ export const ProductsListItems = ({
             </CardContent>
 
             <CardActions className="add-to-cart-block">
-                <Button
-                    variant="contained
-                "
-                >
+                <Button variant="contained" onClick={totalCartItems}>
                     Add to cart
                 </Button>
             </CardActions>

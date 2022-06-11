@@ -6,24 +6,23 @@ import { CssBaseline } from '@mui/material'
 import productsArray from 'utils/productsArray'
 
 export const App = () => {
-    const [cartData, setCartData] = useState({ count: 0, price: 0 })
+    const [cartData, setCartData] = useState({ count: 10, price: 0 })
+    const [count1, setCount] = useState(1)
 
-    // const [count, setCount] = useState(1)
-    // const [color, setColor] = useState('green')
-
-    // const onIncrementClick = () => setCount(count + 1)
-    // const onDecrementClick = () => setCount(count - 1)
-
-    // const changeColor = () => {
-    //     setColor((prevState) => (prevState === 'green' ? 'red' : 'green'))
-    // }
+    function totalCartItems() {
+        return setCartData(count1 + cartData.count)
+    }
 
     return (
         <>
             {' '}
             <CssBaseline />
             <Header cartData={cartData} />
-            <Main cartData={cartData} />
+            <Main
+                count={count1}
+                cartData={cartData}
+                totalCartItems={totalCartItems}
+            />
             <Footer />
         </>
     )
