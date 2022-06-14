@@ -10,9 +10,8 @@ import './ProductsListItems.scss'
 // import PropTypes from 'prop-types'
 
 export const ProductsListItems = ({
-    count1,
     totalCartItems,
-    cartData,
+
     image = 'images/no-image.jpg',
     name,
     description = 'No desc...',
@@ -29,10 +28,7 @@ export const ProductsListItems = ({
     const changeColor = () => {
         setColor((prevState) => (prevState === 'green' ? 'red' : 'green'))
     }
-    count1 = count
 
-    cartData = cartData
-    console.log()
     return (
         <Card>
             <CardContent>
@@ -79,7 +75,10 @@ export const ProductsListItems = ({
             </CardContent>
 
             <CardActions className="add-to-cart-block">
-                <Button variant="contained" onClick={totalCartItems}>
+                <Button
+                    variant="contained"
+                    onClick={() => totalCartItems(count, price)}
+                >
                     Add to cart
                 </Button>
             </CardActions>

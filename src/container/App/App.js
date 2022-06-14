@@ -5,11 +5,13 @@ import { Footer } from 'container/Footer/Footer'
 import { CssBaseline } from '@mui/material'
 
 export const App = () => {
-    const [cartData, setCartData] = useState({ count: 10, price: 0 })
-    const [count1, setCount] = useState(1)
+    const [cartData, setCartData] = useState({ count: 1, price: 0 })
 
-    function totalCartItems() {
-        return setCartData(count1 + cartData.count)
+    function totalCartItems(count, price) {
+        setCartData((prevState) => ({
+            count: prevState.count + count,
+            price: prevState.price + price * count,
+        }))
     }
 
     return (
@@ -17,11 +19,7 @@ export const App = () => {
             {' '}
             <CssBaseline />
             <Header cartData={cartData} />
-            <Main
-                count={count1}
-                cartData={cartData}
-                totalCartItems={totalCartItems}
-            />
+            <Main totalCartItems={totalCartItems} />
             <Footer />
         </>
     )
